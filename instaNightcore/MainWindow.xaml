@@ -1,0 +1,24 @@
+﻿<Controls:MetroWindow x:Class="MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:Icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      Title="instaNightcore (v1.0)"
+                      Loaded="form_Load"
+                      Height="228"
+                      Width="470" ResizeMode="NoResize" Icon="icon.png">
+    <Grid>
+        <Slider x:Name="slideSpeed" HorizontalAlignment="Left" Margin="91,95,0,0" VerticalAlignment="Top" Width="363" Value="20" SmallChange="1"/>
+        <Label x:Name="lbSpeed" Content="Speed Scale:" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="imgTitle" Margin="113,10,114,0" VerticalAlignment="Top" Source="fire.png" Stretch="None" AllowDrop="True"/>
+        <Label x:Name="lbFile" Content="File Loaded:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btSubmit" Content="CREATE YOUR MASTERPIECE" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Width="444"/>
+        <TextBox x:Name="tbFile" HorizontalAlignment="Left" Height="23" Margin="88,60,0,0" TextWrapping="Wrap" Text="Nothing loaded yet..." VerticalAlignment="Top" Width="366" IsReadOnly="True"/>
+        <Button x:Name="btSettings" Margin="412,10,0,0" VerticalAlignment="Top" Style="{DynamicResource MetroCircleButtonStyle}" Height="42" HorizontalAlignment="Left" Width="42">
+            <Icons:PackIconModern Width="20" Height="20" Kind="Settings" />
+        </Button>
+        <ProgressBar x:Name="progProgress" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Width="444" Height="14"/>
+        <Label x:Name="lbStatusLB" Content="Status:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lbStatus" Content="No status messages right now" HorizontalAlignment="Left" Margin="63,149,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Controls:MetroWindow>
